@@ -9,20 +9,24 @@ slOscManager::slOscManager(){
     
 }
 
+
+slOscManager::slOscManager(int port){
+    cout << "listening for osc messages on specified port " << port << "\n";
+    receiver.setup(port);
+    
+}
+
+
 void slOscManager::setup(){
     
     
     
 }
 
-slOscManager::slOscManager(int port){
-    cout << "listening for osc messages on port " << port << "\n";
-    receiver.setup(port);
-    
-}
 
 
 void slOscManager::fireMessage(ofxOscMessage *m){
+    
     
     if(m->getAddress() == "/test1"){
         
@@ -75,7 +79,6 @@ void slOscManager::update(){
         receiver.getNextMessage(&m);
         fireMessage(&m);
 
-        
     }
     
     

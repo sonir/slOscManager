@@ -6,6 +6,7 @@
 #include <iostream>
 #include "ofMain.h"
 #include "ofxOsc.h"
+#include "Desitination.h"
 
 
 class slOscManager {
