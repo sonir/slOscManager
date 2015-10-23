@@ -27,7 +27,6 @@ void slOscManager::setup(){
 
 void slOscManager::fireMessage(ofxOscMessage *m){
     
-    
     if(m->getAddress() == "/test1"){
         
         float fnum = m->getArgAsFloat(0);

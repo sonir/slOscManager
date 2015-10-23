@@ -23,6 +23,7 @@ public:
     string msg_strings[NUM_MSG_STRINGS];
     float timers[NUM_MSG_STRINGS];
     
+    
     //Event Invoking
     ofEvent<float> test1; //Add your own event and invole it in receiveMessage
 
